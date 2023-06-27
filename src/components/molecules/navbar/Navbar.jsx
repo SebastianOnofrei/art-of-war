@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav>
       <img src={logo} alt="Art of war logo" />
       <ul className='links'>
-        {links.map(link=><NavbarItem link={link}/>)}
+        {links.map((link,index)=><NavbarItem key={index} link={link}/>)}
       </ul>
     </nav>
   )

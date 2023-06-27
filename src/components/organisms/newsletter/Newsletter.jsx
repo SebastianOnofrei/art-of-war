@@ -3,7 +3,7 @@ import './Newsletter.scss'
 
 const Newsletter = () => {
   return (
-    <section className='newsletter'>Newsletter</section>
+    <section className='newsletter' >Newsletter</section>
   )
 }
 

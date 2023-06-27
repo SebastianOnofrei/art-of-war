@@ -3,7 +3,7 @@ import './Battle_Requirements.scss'
 
 const Battle_Requirements = () => {
   return (
-    <section className='battle-requirements'>Battle_Requirements</section>
+    <section className='battle-requirements' id='Battle Requirements'>Battle_Requirements</section>
   )
 }
 

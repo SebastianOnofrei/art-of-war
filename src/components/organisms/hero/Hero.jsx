@@ -16,7 +16,13 @@ const Hero = () => {
 				</h3>
 			</div>
 			<button className="story-button">The story</button>
-			<img src={scrollDownTriangle} alt=""  className='scrollDownTriange-image'/>
+			<a href="#About">
+				<img
+					src={scrollDownTriangle}
+					alt=""
+					className="scrollDownTriange-image"
+				/>
+			</a>
 		</main>
 	);
 }

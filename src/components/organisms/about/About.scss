@@ -67,6 +67,7 @@
     & .about-slideshow{
         position: relative;
         width: 50%;
+        max-width: 60rem;
 
         img{
             border-radius: 1rem;
@@ -77,9 +78,10 @@
         & .about-slideshow__next-photo-arrow{
             border-radius: 0;
             position: absolute;
-            right: -3rem;
+            right: -20px;
             top: 50%;
             transform: translate(-50% , -50%);
+            z-index: 6;
         }
 
         // Fac o clasa .current in care dau zindex mai mare decat restu ca sa fie prima mereu

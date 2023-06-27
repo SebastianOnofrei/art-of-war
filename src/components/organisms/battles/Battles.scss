@@ -1,8 +1,76 @@
+@import '../../../scss/foundation/variables';
+
 .battles{
     min-height: 100vh;
-    background: url('../../../assets/radialGradientBattles.png');
-    background-position: center;
+    background:  url('../../../assets/sunTzuStatue.png'),url('../../../assets/radialGradientBattles.png') ;
+    background-position: 10%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color:black;
+    background-size: contain, cover;
+    background-color:rgb(0, 0, 0);
+    position: relative;
+
+    & .battles-text{
+        color: white;
+        padding-left: 10rem;
+        width: 50%;
+        position: absolute; 
+        left: 50%;
+        top: 20%;
+
+        & .battle-features__boju{
+            list-style-image: url('../../../assets/battles_bullet-fill.svg') ;
+            position: relative;
+            z-index: 2;
+            padding-left: 2rem;
+
+        }
+
+        & .battle-features__eight-princes{
+            list-style-image: url('../../../assets/battles_bullet-simple.svg') ;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        & .battle-features__red-cliffs{
+            list-style-image: url('../../../assets/battles_bullet-simple.svg') ;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        & h1{
+            color: #FFF;
+            font-size: $h1;
+            font-family:$bebas-neue;
+            font-weight: $bold;
+            letter-spacing: $h1-letter-spacing;
+            text-transform: uppercase;
+        }
+
+        & h2{
+            padding-top: 4rem;
+            color: $warrior-red;
+            font-size: $h2;
+            font-family: $bebas-neue;
+            font-weight: $bold;
+            letter-spacing: 0.2rem;
+        }
+        
+        & h3{
+            font-size: 2.4rem;
+            font-family: $bebas-neue;
+            font-weight: $bold;
+            letter-spacing: $h3-letter-spacing;
+        }
+        
+
+        & p{
+            color: $white;
+            text-align: justify;
+            max-width: 60%;
+            font-size: $p;
+            font-family: $open-sans;
+            line-height: 2.2rem;
+            
+        }
+    }
 }

@@ -7,8 +7,15 @@ li{
         text-decoration: none;
         font-family: $open-sans;
         font-size: 1.6rem;
+        text-shadow: 2px 2px $warrior-ink;
         text-transform: uppercase;
         font-weight: $bold;
         letter-spacing: $nav-links-letter-spacing;
+        transition: all .15s ease-in-out;
+
+        &:hover{
+            font-weight: $boldest;
+            font-size: 2rem;
+        }
     }
 }

@@ -1,6 +1,58 @@
+@import '../../../scss/foundation/variables';
+
 main{
     min-height: 100vh;
     background: url('../../../assets/main-image.jpg');    
     background-size: cover;
     background-position: center;
+    position: relative;
+    
+    & .hero-text-container{
+        // background-color: rgb(17, 17, 17);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);    
+        & h1{
+            font-family: $bebas-neue;
+            font-size: $h1;
+            letter-spacing: $h1-letter-spacing;
+            text-shadow: 4px 4px $warrior-ink;
+            color: $white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        & h3{
+            font-family: $bebas-neue;
+            font-size: $h3;
+            text-align: center;
+            padding: 0 10rem;
+            letter-spacing: $h3-letter-spacing;
+            text-shadow: 2px 2px $warrior-ink;
+            color:$white;
+        }
+    }
+
+    & .story-button{
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        font-weight: $bold;
+        font-size: 1.2rem;
+        color: $white;
+        font-family: $open-sans;
+        text-transform: uppercase;
+        cursor: pointer;
+        bottom: 6rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    & .scrollDownTriange-image{
+         position: absolute;
+         bottom: 4rem;
+         left: 50%;
+         transform: translate(-50%);
+    }
 }

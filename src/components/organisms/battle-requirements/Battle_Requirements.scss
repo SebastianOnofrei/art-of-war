@@ -1,8 +1,102 @@
+@import '../../../scss/foundation/variables';
+
 .battle-requirements{
     min-height: 100vh;
-    background-color: cadetblue;
     background: url('../../../assets/radialGradient.png'),url('../../../assets/battle-requirements1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: $white;
+    position: relative;
+
+
+    .battle-requirements-headings{
+        display: block;
+        width: max-content;
+        padding-top: 10rem;
+        margin: 0 auto;
+        
+    }
+
+    & h1{
+        font-size: $h1;
+        font-family: $bebas-neue;
+        font-weight: $bold;
+        letter-spacing: $h1-letter-spacing;
+        text-transform: uppercase;  
+    }
+
+    & h3{
+        text-align: center;
+        font-size: $h3;
+        font-family: $bebas-neue;
+        font-weight: $bold;
+        letter-spacing: $h3-letter-spacing;
+    }
+
+    .battle-requirements-virtues {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 66rem;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+
+        .grid-item{
+            border: 10px double $warrior-gray-grid;
+            padding: 1.5rem;
+        }
+
+        h3{
+            color: $warrior-red;
+            font-size: $h3;
+            font-family: $bebas-neue;
+            font-weight: $bold;
+            letter-spacing: $h3-letter-spacing;
+            text-align: left;
+            padding: 1rem 0;
+        }
+
+        p{
+            color: $white;
+            font-size: $p;
+            font-family: $open-sans;
+            line-height: 2.2rem;
+        }
+
+        & .morale {
+            grid-area: 1 / 1 / 2 / 2;
+            border-bottom-right-radius: 5rem;
+        }
+
+        & .diversion {
+            grid-area: 1 / 2 / 2 / 3; 
+            border-top-right-radius: 5rem;
+            border-bottom-left-radius: 5rem;
+        }
+
+        & .focus {
+            grid-area: 2 / 1 / 3 / 2; 
+            border-top-right-radius: 5rem;
+        }
+
+        & .corners {
+            grid-area: 2 / 2 / 3 / 3;
+            border-top-left-radius: 5rem;
+           
+        }
+
+        & .attack {
+            grid-area: 3 / 1 / 4 / 3;
+            border-bottom-left-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+        }
+     }
+
+
+
+
 }

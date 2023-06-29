@@ -1,0 +1,92 @@
+@import '../../../scss/foundation/variables';
+
+.review{
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    margin-top: 2rem;
+    padding: 2rem;
+    min-height:220px;
+    max-height: 220px;
+    
+    &.review-1{
+        position: relative;
+        left:10rem;
+    }
+
+    &.review-2{
+        position: relative;
+        
+    }
+
+    &.review-3{
+        position: relative;
+        left:7rem;
+    }
+
+    & .review__profile{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+       
+        & .img-container{
+        // We need to provide z-index to the parent in order for the ::after z-index to work.
+            position: relative;
+            z-index: 1;
+
+            & .review__profile-img{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+            }
+
+            &::after{
+                content: '';
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background-color: $warrior-red;
+                position: absolute;
+                left: .5rem;
+                top: .2rem;
+                z-index: -1; 
+            }
+        }
+
+        & .review__profile-info{
+            & h3{
+                color: $warrior-red;
+                font-size: $h3;
+                font-family: $bebas-neue;
+                font-style: normal;
+                font-weight: $bold;
+                line-height: normal;
+                letter-spacing: $h3-letter-spacing;
+            }
+
+            &  .review__profile-info-occupation{
+                color: #FFF;
+                text-align: justify;
+                font-size: $p;
+                font-family: $open-sans;
+                font-style: normal;
+                font-weight: $regular;
+                line-height: 2.2rem;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    & .review__opinion{
+        color: #FFF;
+        font-size: $p;
+        font-family: $open-sans;
+        font-style: normal;
+        font-weight: $regular;
+        line-height: normal;
+        margin-top: 2rem;
+    }
+    
+}
+
+
+

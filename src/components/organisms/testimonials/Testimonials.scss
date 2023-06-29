@@ -63,8 +63,10 @@
 
              &:hover{
                 background-color: $warrior-ink;
-                color: $warrior-red; 
+                color: $warrior-gold; 
                 transform: scale(1.05);
+                box-shadow: 0 0 8px $warrior-gold;
+  
             }
         }
     }

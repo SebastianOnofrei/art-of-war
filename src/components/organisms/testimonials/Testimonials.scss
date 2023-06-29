@@ -60,6 +60,11 @@
             border-radius: 0.4rem;
             background: $warrior-red;
             padding: 1rem;
+
+             &:hover{
+                background-color: $warrior-ink;
+                color: $warrior-red; 
+            }
         }
     }
 

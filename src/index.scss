@@ -23,3 +23,18 @@
 ::-webkit-scrollbar-thumb:hover {
   background:#1f0101;
 }
+
+
+/******************
+ * BUTTON EFFECTS *
+ ******************/
+
+button{
+  cursor: pointer;
+  transition: all .75s ease-in-out;
+}
+
+ button:hover{
+  box-shadow: 0 0 8px $warrior-red;
+  transform: scale(1.05);
+ }

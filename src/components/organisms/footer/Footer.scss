@@ -1,0 +1,28 @@
+@import '../../../scss/foundation/variables';
+
+footer{
+    background-color: $warrior-red;
+    padding: 1rem 20rem;
+
+
+    hr{
+        border: 0;
+        height: 4px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255,0.15), $warrior-gold, rgba(255, 255, 255, 0.151));
+    }
+
+    & .copyright{
+        width: 100%;
+        padding:2rem;
+
+        & p{
+            color: $white;
+            font-size: $h3;
+            font-family: $bebas-neue;
+            font-style: normal;
+            font-weight: $regular;
+            line-height: normal;
+            text-align: center;
+        }
+    }
+}

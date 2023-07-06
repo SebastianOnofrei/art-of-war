@@ -1,6 +1,10 @@
 @import '../../../scss/foundation/variables';
 
 .battles{
+    @media (max-width:$lg){
+        background-size: 400px, cover;
+        background-position: left;
+    }
     min-height: 969px;
     background:  url('../../../assets/sunTzuStatue.png'),url('../../../assets/radialGradientBattles.png') ;
     background-position: 10%;
@@ -10,6 +14,12 @@
     position: relative;
 
     & .battles-text{
+
+        @media (max-width:$lg){
+            left: 40%;
+            top: 10%;
+            width: 60%;
+        }
         color: white;
         padding-left: 10rem;
         width: 50%;
@@ -64,6 +74,9 @@
         
 
         & p{
+            @media (max-width:$lg){
+                max-width: 80%;
+            }
             color: $white;
             text-align: justify;
             max-width: 60%;

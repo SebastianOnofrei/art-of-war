@@ -13,11 +13,17 @@
     }
 
     &.review-2{
+        @media (max-width:$lg) {
+            left: 10rem;
+        }
         position: relative;
         
     }
 
     &.review-3{
+         @media (max-width:$lg) {
+            left: 10rem;
+        }
         position: relative;
         left:7rem;
     }

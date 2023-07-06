@@ -1,6 +1,10 @@
 @import '../../../scss/foundation/variables';
 
 .battle-requirements{
+    @media (max-width:$lg){
+        background: black
+
+    }
     min-height: 969px;
     background: url('../../../assets/radialGradient.png'),url('../../../assets/battle-requirements1.png');
     background-repeat: no-repeat;
@@ -35,6 +39,11 @@
     }
 
     .battle-requirements-virtues {
+
+        @media (max-width:$lg){
+            left: 7%; 
+            top: 30%;
+        }   
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -46,11 +55,19 @@
         left: 5%;
 
         .grid-item{
+            @media (max-width:$lg) {
+                border: 10px double $warrior-red;
+            }
             border: 10px double $warrior-gray-grid;
             padding: 1.5rem;
+
         }
 
         h3{
+            @media (max-width:$lg){
+                color: $warrior-gold;
+                padding: 2rem 0;
+            }
             color: $warrior-red;
             font-size: $h3;
             font-family: $bebas-neue;

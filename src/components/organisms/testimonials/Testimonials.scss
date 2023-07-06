@@ -1,6 +1,11 @@
 @import '../../../scss/foundation/variables';
 
 .testimonials{
+
+    @media (max-width:$lg){
+        min-height: 1200px;
+    }
+
     min-height: 969px;
     background: url('../../../assets/testimonialGradient.png'),url('../../../assets/testimonial-bg-image.png');
     background-size: cover;
@@ -11,6 +16,10 @@
     padding-left: 10rem;
 
     & .testimonials-cta{
+        @media (max-width:$lg){
+            left: 10%;
+            width: 20rem;
+        }
         position:absolute;
         width: 50rem;
         top: 25%;
@@ -72,6 +81,11 @@
     }
 
     & .testimonials-reviews{
+        @media (max-width:$lg){
+            right: 20%;
+            position: absolute;
+            width: 30rem;
+        }
         position:absolute;
         width: 50rem;
         top: 10%;  

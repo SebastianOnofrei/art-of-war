@@ -6,6 +6,10 @@ main{
     background-size: cover;
     background-position: center;
     position: relative;
+
+    @media (max-width:$md){
+        background-position: 70%;
+    }
     
     & .hero-text-container{
         // background-color: rgb(17, 17, 17);
@@ -23,7 +27,7 @@ main{
             text-transform: uppercase;
         }
 
-        & h3{
+        & h3{ 
             font-family: $bebas-neue;
             font-size: $h3;
             text-align: center;
@@ -31,6 +35,16 @@ main{
             letter-spacing: $h3-letter-spacing;
             text-shadow: 2px 2px $warrior-ink;
             color:$white;
+
+            @media (max-width:$xl) {
+                padding: 0;
+            }
+
+            @media (max-width:$lg){
+                padding: 0;
+                font-size: $h5;
+            }
+           
         }
     }
 

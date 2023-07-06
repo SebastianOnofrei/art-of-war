@@ -2,8 +2,9 @@
 
 .about{
 
-  
-
+   @media(max-width:$xl){
+    padding: 12rem;
+   }
     min-height: 969px;
     background: url('../../../assets/intro-image.jpg');
     background-repeat: no-repeat;

@@ -1,9 +1,31 @@
+@import '../../../scss/foundation/variables';
+
 nav{
+    @media (min-width:$medium){
+       padding: 2rem;  
+       max-width: 100%;
+    }
+
+     @media (min-width:$large){
+       padding: 2rem;  
+       max-width: 75%;
+       
+    }
+
+    @media (min-width:$extra-large) {
+       padding: 2rem 4rem;  
+    }
+
+    @media (min-width:$extra-extra-large) {
+       padding: 2rem 12rem;
+    }
+    
+    max-width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 12rem;
-    max-width: 75%;
+   
 
     & .links{
         display: flex;

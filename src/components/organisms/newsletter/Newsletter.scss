@@ -1,6 +1,9 @@
 @import '../../../scss/foundation/variables';
 
 .newsletter{
+    @media (max-width:$lg){
+        background-size: 300px;
+    }
     min-height: 969px;
     background: url('../../../assets/ArtOfWarBookCover.png'),url('../../../assets/radialGradientBattles.png');
     background-color: rgba(0, 0, 0, 0.959);
@@ -11,13 +14,20 @@
     position: relative;
 
     & .book-description{
+        @media (max-width:$lg){
+            top: 10%;
+        }
+
         max-width: 45%;
         min-width: 45%;
-
         position: absolute;
         left: 50%;
         top: 20%;
+        
         & p{
+            @media (max-width:$lg){
+                font-size: $p-small-devices;
+            }
             color: $white;
             text-align: justify;
             font-size: $p;

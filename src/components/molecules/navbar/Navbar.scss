@@ -1,22 +1,22 @@
 @import '../../../scss/foundation/variables';
 
 nav{
-    @media (min-width:$medium){
+    @media (min-width:$md){
        padding: 2rem;  
        max-width: 100%;
     }
 
-     @media (min-width:$large){
+     @media (min-width:$lg){
        padding: 2rem;  
        max-width: 75%;
        
     }
 
-    @media (min-width:$extra-large) {
+    @media (min-width:$xl) {
        padding: 2rem 4rem;  
     }
 
-    @media (min-width:$extra-extra-large) {
+    @media (min-width:$xxl) {
        padding: 2rem 12rem;
     }
     

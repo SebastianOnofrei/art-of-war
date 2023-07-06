@@ -1,6 +1,9 @@
 @import '../../../scss/foundation/variables';
 
 .about{
+
+  
+
     min-height: 969px;
     background: url('../../../assets/intro-image.jpg');
     background-repeat: no-repeat;
@@ -11,6 +14,10 @@
     gap: 4rem;
 
     & .about-text{
+
+        @media(max-width:$xl){
+            width: 100%;
+        }
         color: white;
         width: 50%;
 
@@ -65,6 +72,11 @@
     }
 
     & .about-slideshow{
+
+        @media(max-width:$xl){
+            display: none;
+        }
+
         position: relative;
         width: 50%;
         max-width: 60rem;

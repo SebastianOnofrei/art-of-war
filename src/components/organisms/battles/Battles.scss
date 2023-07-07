@@ -5,6 +5,9 @@
         background-size: 400px, cover;
         background-position: left;
     }
+    @media (max-width:$xl){
+        background-size: 500px,cover;
+    }
     min-height: 969px;
     background:  url('../../../assets/sunTzuStatue.png'),url('../../../assets/radialGradientBattles.png') ;
     background-position: 10%;

@@ -13,10 +13,10 @@ const LandingPage = () => {
 			{/* <Hero />
 			<About />
 			<Battles />
-			<Battle_Requirements /> */}
-			<Testimonials />
-			{/* <Newsletter />
-			<Footer /> */}
+			<Battle_Requirements />
+			<Testimonials /> */}
+			<Newsletter />
+			{/* <Footer /> */}
 		</>
 	);
 }

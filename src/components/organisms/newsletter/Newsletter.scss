@@ -32,12 +32,16 @@
     & .book-description{
 
         @media(max-width:$sm){
-            left: 10%;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
+            max-width: unset;
+            padding: 2rem;
         }
 
 
-        @media (max-width:$lg){
+        @media (min-width:$sm){
             top: 10%;
             padding: 2rem;
         }

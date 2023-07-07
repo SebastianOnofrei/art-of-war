@@ -13,11 +13,17 @@ main{
     
     & .hero-text-container{
         // background-color: rgb(17, 17, 17);
+        @media (max-width:$sm) {
+                left: 40%;
+        }
         position: absolute;
         top: 40%;
         left: 50%;
         transform: translate(-50%,-50%);    
         & h1{
+            @media (max-width:$sm) {
+                font-size: $h2;
+            }
             font-family: $bebas-neue;
             font-size: $h1;
             letter-spacing: $h1-letter-spacing;
@@ -28,6 +34,7 @@ main{
         }
 
         & h3{ 
+        
             font-family: $bebas-neue;
             font-size: $h3;
             text-align: center;
@@ -36,11 +43,21 @@ main{
             text-shadow: 2px 2px $warrior-ink;
             color:$white;
 
-            @media (max-width:$xl) {
+            @media (max-width:$sm){
+                margin-top:4rem;
+                font-family: $open-sans;
+                font-size: 1.2rem;
+                letter-spacing: 0;
+                font-weight: $regular;
+                padding: 0;
+                text-align: start;
+            }
+
+            @media (min-width:$xl) {
                 padding: 0;
             }
 
-            @media (max-width:$lg){
+            @media (min-width:$lg){
                 padding: 0;
                 font-size: $h5;
             }

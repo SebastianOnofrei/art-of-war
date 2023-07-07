@@ -1,35 +1,56 @@
 @import '../../../scss/foundation/variables';
 
 nav{
-  
-    @media (min-width:$md){
-      padding: 2rem;  
-      max-width: 100%;
-    }
+  @media (max-width:$sm){  
+    max-width: 100%;
+  }
 
-     @media (min-width:$lg){
-      padding: 2rem;  
-      max-width: 75%;
-       
-    }
+  @media (min-width:$md){
+    padding: 2rem;  
+    max-width: 100%;
+  }
 
-    @media (min-width:$xl) {
-      padding: 2rem 4rem;  
-    }
-
-    @media (min-width:$xxl) {
-      padding: 2rem 12rem;
-    }
-    
+    @media (min-width:$lg){
+    padding: 2rem;  
     max-width: 75%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 12rem;
-   
+      
+  }
 
-    & .links{
-        display: flex;
-        gap: 3rem;
-    }
+  @media (min-width:$xl) {
+    padding: 2rem 4rem;  
+  }
+
+  @media (min-width:$xxl) {
+    padding: 2rem 12rem;
+  }
+  
+  max-width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 12rem;
+  position: relative;
+
+
+  & .navbar-logo{
+    position: relative;
+    right: 110px;
+    top: -10px;
+  }
+
+  & .menu-toggle{
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    color: white;
+    font-size: $h2;
+  }
+
+
+  & .links{
+      display: flex;
+      gap: 3rem;
+  }
+
+
 }

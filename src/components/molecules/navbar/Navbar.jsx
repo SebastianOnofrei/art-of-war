@@ -9,10 +9,11 @@ const Navbar = () => {
 
   return (
     <nav>
-      <img src={logo} alt="Art of war logo" />
+      <img src={logo} alt="Art of war logo" className='navbar-logo'/>
       <ul className='links'>
         {links.map((link,index)=><NavbarItem key={index} link={link}/>)}
       </ul>
+      <div className="menu-toggle">=</div>
     </nav>
   )
 }

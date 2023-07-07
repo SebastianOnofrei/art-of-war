@@ -16,9 +16,18 @@
     padding-left: 10rem;
 
     & .testimonials-cta{
-        @media (max-width:$lg){
+
+        @media(min-width:$sm){
+            width: 25rem;
+        }
+
+        @media (min-width:$lg){
             left: 10%;
-            width: 20rem;
+            width: 25rem;
+        }
+
+        @media (min-width:$xl){
+            width: 48rem;
         }
         position:absolute;
         width: 50rem;

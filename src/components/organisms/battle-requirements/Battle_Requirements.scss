@@ -7,6 +7,10 @@
     @media (max-width:$lg){
         background: rgb(19, 18, 18)
     }
+
+    @media (max-width:$xl){
+        background: rgb(19, 18, 18)
+    }
     min-height: 969px;
     background: url('../../../assets/radialGradient.png'),url('../../../assets/battle-requirements1.png');
     background-repeat: no-repeat;
@@ -47,14 +51,16 @@
             flex-direction: column;
             align-items: center;
             gap: 4rem;
-            // grid-template-columns: repeat(2, 1fr);
-            // grid-template-rows: repeat(5, 1fr);
-            // grid-row-gap: 2rem;
         }
         @media (max-width:$lg){
             left: 7%; 
             top: 30%;
-        }   
+        }
+        
+        @media (min-width:$lg){
+            left: 20%;
+            top: 30%;
+        }
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);

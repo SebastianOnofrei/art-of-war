@@ -3,7 +3,7 @@ import './NavbarItem.scss';
 
 const NavbarItem = (props) => {
   return (
-		<li>
+		<li className='nav-item'>
 			<a href={'#'+props.link}>{props.link}</a>
 		</li>
 	);

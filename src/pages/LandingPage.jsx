@@ -10,13 +10,13 @@ import Footer from "../components/organisms/footer/Footer";
 const LandingPage = () => {
   return (
 		<>
-			<Hero />
-			<About />
+			{/* <Hero />
+			<About /> */}
 			<Battles />
-			<Battle_Requirements />
+			{/* <Battle_Requirements />
 			<Testimonials />
 			<Newsletter />
-			<Footer />
+			<Footer /> */}
 		</>
 	);
 }

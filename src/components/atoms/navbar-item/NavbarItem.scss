@@ -1,5 +1,9 @@
 @import '../../../scss/foundation/variables';
-li{
+.nav-item{
+    @media (max-width:$sm){
+        display: none;
+    }
+
     list-style-type: none;
 
     & a{

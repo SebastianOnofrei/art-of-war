@@ -1,8 +1,10 @@
 @import '../../../scss/foundation/variables';
 
 .about{
-
-   @media(max-width:$xl){
+   @media (max-width:$lg){
+    padding: 2rem;
+   }
+   @media(min-width:$xl){
     padding: 12rem;
    }
     min-height: 969px;

@@ -1,6 +1,9 @@
 @import '../../../scss/foundation/variables';
 
 footer{
+    @media (max-width:$sm){
+        padding: unset;
+    }
     background-color: $warrior-red;
     padding: 1rem 20rem;
 

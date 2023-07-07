@@ -8,12 +8,19 @@
     min-height:220px;
     
     &.review-1{
+       @media (max-width:$sm){
+            left: 9%;
+        }
+        
         position: relative;
         left:10rem;
     }
 
     &.review-2{
-        @media (max-width:$lg) {
+        @media (max-width:$sm){
+            left: 9%;
+        }
+        @media (min-width:$sm) {
             left: 10rem;
         }
         position: relative;
@@ -21,7 +28,10 @@
     }
 
     &.review-3{
-         @media (max-width:$lg) {
+        @media (max-width:$sm){
+            left: 9%;
+        }
+        @media (min-width:$sm) {
             left: 10rem;
         }
         position: relative;

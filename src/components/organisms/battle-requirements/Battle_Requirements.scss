@@ -2,7 +2,7 @@
 
 .battle-requirements{
     @media (max-width:$sm) {
-        min-height: 2000px;
+        
     }
     @media (max-width:$lg){
         background: rgb(19, 18, 18)
@@ -21,14 +21,19 @@
 
 
     .battle-requirements-headings{
+        @media (max-width:$sm){
+            padding-top: 2rem;
+        }
         display: block;
         width: max-content;
         padding-top: 10rem;
-        margin: 0 auto;
-        
+        margin: 0 auto; 
     }
 
     & h1{
+        @media (max-width:$sm){
+            font-size: $h3;
+        }
         font-size: $h1;
         font-family: $bebas-neue;
         font-weight: $bold;
@@ -37,6 +42,9 @@
     }
 
     & h3{
+        @media (max-width:$sm){
+            font-size: $h4;
+        }
         text-align: center;
         font-size: $h3;
         font-family: $bebas-neue;
@@ -50,9 +58,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 4rem;
+            gap: 2rem;
+            margin-top: 2rem;
+            padding-bottom: 4rem;
+            position: relative; 
+            left:0;
+           
         }
-        @media (max-width:$lg){
+        @media (min-width:$sm){
             left: 7%; 
             top: 30%;
         }
@@ -73,18 +86,17 @@
 
         .grid-item{
             @media (max-width:$sm){
-                border: 5px solid $warrior-red;
+                border: 2px solid $warrior-gray-grid;
+                margin: 0 4rem;
             }
-            @media (min-width:$lg) {
-                border: 10px double $warrior-red;
-            }
+             
             border: 10px double $warrior-gray-grid;
             padding: 1.5rem;
 
         }
 
         h3{
-            @media (max-width:$lg){
+            @media (max-width:$xl){
                 color: $warrior-gold;
                 padding: 2rem 0;
             }

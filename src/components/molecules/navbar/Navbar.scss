@@ -33,12 +33,19 @@ nav{
 
 
   & .navbar-logo{
+     @media (min-width:$sm) {
+      right: 0;
+      top: 0;
+    }
     position: relative;
     right: 110px;
     top: -10px;
   }
 
   & .menu-toggle{
+    @media (min-width:$sm) {
+      display: none;
+    }
     position: absolute;
     right: 20px;
     top: 16px;
